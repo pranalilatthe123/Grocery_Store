@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayyad Kirana Store</title>
+    <link rel="icon" href="/grocy.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo"
+        ><i class="fas fa-shopping-basket"></i> Sayyad Kirana Store</a
+      >
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="text" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+
+      
+      <!-- Login Form -->
+      <form action="#" class="login-form" id="login-form">
+        <h3>Contact Us</h3>
+
+
+        <p><strong>Want to know our location?</strong></p>
+        <p 
+      id="openMap"
+      style="cursor: pointer; color: blue; text-decoration: underline"
+    > 
+      Click here
+    </p>
+
+    <script>
+      // JavaScript code to open Google Maps
+      document.getElementById("openMap").addEventListener("click", function () {
+        // Replace 'latitude' and 'longitude' with the actual coordinates or address you want to open
+        var coordinates = "17.3975243, 74.1036921"; 
+        var googleMapsUrl = "https://www.google.com/maps?q=" + coordinates;
+
+        // Open Google Maps in a new tab
+        window.open(googleMapsUrl, "_blank");
+      });
+    </script>
+
+        <p><strong>Our Contact number:</strong>9960781286</p>
+        <p><strong>Email:</strong>sayyad2109@gmail.com</p>
+        
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh and <span>Products</span>  for your</h3>
+        <p>
+          daily needs. Shop at our Sayyed Kirana Store for a wide selection of
+          high-quality fruits, vegetables, dairy, and pantry items. We guarantee
+          freshness and offer fast. Start shopping today!
+        </p>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <h1 class="heading">our <span>features</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="/feature-1.png" alt="" style="width: 33rem" />
+          <h3>fresh and organic</h3>
+          <br />
+          <p class="fresh">
+            Welcome to our Sayyed Kirana Store, where freshness meets flavor in
+            every aisle! Step into a world of wholesome goodness as we proudly
+            present our bountiful selection of fresh and organic fruits and
+            vegetables.
+          </p>
+        </div>
+        
+        <div class="box">
+          <img src="/feature-3.png" alt="" style="width: 37rem" />
+          <h3>easy payments</h3>
+          <br />
+          <p class="payments">
+            Welcome to our grocery store, where convenience meets choice at the
+            checkout! We understand that seamless payment options are an
+            integral part of your shopping experience, and we're delighted to
+            offer a variety of methods to suit your preferences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading">our <span>products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="/freshveg.jpg" alt="" />
+            <h3>fresh vegetables</h3>
+            <div class="price">Rs.20-Rs.100/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="/masala.jpg" alt="" />
+            <h3>masalas</h3>
+            <div class="price">Rs.20-Rs.40/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="/lays1.webp" alt="" />
+            <h3>Lays</h3>
+            <div class="price">Rs.5-Rs.10/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="/products-4.png" alt="" />
+            <h3>fresh cabbage</h3>
+            <div class="price">Rs.15-Rs.30/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <img src="/dal1.jpg" alt="" />
+              <h3>Dals</h3>
+              <div class="price">Rs.20-Rs.100/-</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="/drinks.png" alt="" />
+              <h3>Cold Drinks</h3>
+              <div class="price">Rs.10-Rs.150/-</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="/stationary.jpg" alt="" />
+              <h3>Stationary</h3>
+              <div class="price">Rs.2-Rs.20/-</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="/products-8.png" alt="" />
+              <h3>green lemon</h3>
+              <div class="price">Rs.5-Rs.10/-</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <h1 class="heading">product <span>categories</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="/cat-1.png"
+            alt=""
+            style="width: 30rem; padding-top: 6rem"
+          />
+          <h3>vegetables</h3>
+          <p>upto 10% off</p>
+        </div>
+        <div class="box">
+          <img src="/cat-2.png" alt="" style="width: 30rem" />
+          <h3>fresh fruits</h3>
+          <p>upto 5% off</p>
+        </div>
+        <div class="box">
+          <img
+            src="/cat-3.png"
+            alt=""
+            style="width: 30rem; padding-top: 2.5rem"
+          />
+          <h3>dairy products</h3>
+          <p>upto 5% off</p>
+        </div>
+        <div class="box">
+          <img
+            src="/snac.jpg"
+            alt=""
+            style="width: 30rem; padding-top: 8.5rem"
+          />
+          <h3>snacks</h3>
+          <p>upto 2% off</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
